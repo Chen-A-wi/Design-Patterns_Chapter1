@@ -1,6 +1,22 @@
+import kotlin.properties.Delegates
+
 abstract class Duck {
-    abstract fun quack()
-    abstract fun swim()
-    abstract fun display()
-    abstract fun fly()
+    open var flyBehavior by Delegates.notNull<FlyBehavior>()
+    open var quackBehavior by Delegates.notNull<QuackBehavior>()
+
+    init {
+        performSwim()
+    }
+
+    fun performQuack() {
+        quackBehavior.quack()
+    }
+
+    fun performFly() {
+        flyBehavior.fly()
+    }
+
+    private fun performSwim() {
+        print("What? I'm swimming~~\n")
+    }
 }
