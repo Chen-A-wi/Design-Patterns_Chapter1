@@ -10,6 +10,10 @@ class MallardDuck : Duck() {
     override fun display() {
         print("我是綠頭鴨")
     }
+
+    override fun fly() {
+        print("I believe i can fly")
+    }
 }
 
 fun main() {

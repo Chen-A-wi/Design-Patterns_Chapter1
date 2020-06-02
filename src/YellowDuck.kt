@@ -10,6 +10,10 @@ class YellowDuck : Duck() {
     override fun display() {
         print("我是黃色小鴨")
     }
+
+    override fun fly() {
+        TODO("Not yet implemented")
+    }
 }
 
 fun main() {

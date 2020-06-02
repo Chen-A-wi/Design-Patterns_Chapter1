@@ -10,6 +10,10 @@ class RedheadDuck : Duck() {
     override fun display() {
         print("我是紅頭鴨")
     }
+
+    override fun fly() {
+        print("I believe i can fly")
+    }
 }
 
 fun main() {
