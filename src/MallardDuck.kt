@@ -4,8 +4,3 @@ class MallardDuck : Duck() {
         flyBehavior = FlyWithWings()
     }
 }
-
-fun main() {
-//    val mallardDuck = MallardDuck()
-//    mallardDuck.display()
-}
